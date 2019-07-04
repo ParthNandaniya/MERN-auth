@@ -5,6 +5,6 @@ export default {
 	appTitle: 'MERN',
 
 	API: {
-		baseURL: 'http://localhost:4000/users'
+		baseURL: 'http://localhost:4000/'
 	}
 }

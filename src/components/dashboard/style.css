@@ -1,10 +1,10 @@
 
-.center {
+/* .center {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 70px;
-}
+} */
 
 .horizontalPadding {
     padding-left: 20px;
@@ -20,4 +20,13 @@
     margin-bottom: 10px;
     display: flex;
     justify-content: flex-end;
+}
+
+.upload-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.username-refresh {
+    display: inline
 }
