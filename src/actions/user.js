@@ -114,33 +114,3 @@ export const login = (details = {}, onSuccess = () => {}, onFailure = () => {}) 
 			});
 	};
 };
-
-export const fetchMedia = (details = {}, onSuccess = () => {}, onFailure = () => {}) => {
-	return dispatch => {
-
-		dispatch({ type: LOGIN });
-
-		axios
-			.post(`${configs.API.baseURL}dashboard/getAllMedia`, {})
-			.then(res => {
-				console.lore({ res });
-				if(res.data.result === 'successful') {
-
-					// dispatch({
-					// 	type: LOGIN_SUCCESSFUL,
-					// 	payload: res.data.user
-					// });
-
-					onSuccess();
-				} else {
-
-					// dispatch({ type: LOGIN_FAILED });
-					onFailure(`${res.data.error}`);
-				}
-			})
-			.catch(error => {
-				// dispatch({ type: LOGIN_FAILED });
-				onFailure(`${error}`);
-			});
-	}
-}

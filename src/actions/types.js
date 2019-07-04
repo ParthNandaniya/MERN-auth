@@ -7,3 +7,7 @@ export const LOGIN = 'login';
 export const LOGIN_SUCCESSFUL = 'login_successful';
 export const LOGIN_FAILED = 'login_failed';
 export const LOGOUT = 'logout';
+
+export const FETCH_MEDIA = '';
+export const FETCH_MEDIA_SUCCESSFUL = '';
+export const FETCH_MEDIA_FAILED = '';
