@@ -8,6 +8,6 @@ export const LOGIN_SUCCESSFUL = 'login_successful';
 export const LOGIN_FAILED = 'login_failed';
 export const LOGOUT = 'logout';
 
-export const FETCH_MEDIA = '';
-export const FETCH_MEDIA_SUCCESSFUL = '';
-export const FETCH_MEDIA_FAILED = '';
+export const FETCH_MEDIA = 'fetch_media';
+export const FETCH_MEDIA_SUCCESSFUL = 'fetch_media_successful';
+export const FETCH_MEDIA_FAILED = 'fetch_media_failed';

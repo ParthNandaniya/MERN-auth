@@ -5,7 +5,7 @@ import {
 } from '../actions/types';
 
 const INITIAL_STATE = {
-    media: [],
+    mediaList: [],
     fetchingMedia: false
 };
 
@@ -17,7 +17,7 @@ export default (state = INITIAL_STATE, action) => {
             break;
 
         case FETCH_MEDIA_SUCCESSFUL:
-            return { ...state, media: action.payload, fetchingMedia: false };
+            return { ...state, mediaList: action.payload, fetchingMedia: false };
 
             break;
 

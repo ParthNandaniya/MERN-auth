@@ -19,11 +19,11 @@ export const fetchMedia = (details = {}, onSuccess = () => {}, onFailure = () =>
 			.post(`${configs.API.baseURL}dashboard/getAllMedia`, {})
 			.then(res => {
 				// console.log(res.data);
-				if(res.data.result === 'successful') {
+				if(res.data.result === "successful") {
 
 					dispatch({
 						type: FETCH_MEDIA_SUCCESSFUL,
-						payload: res.data.media
+						payload: [ ...res.data.media ]
 					});
 
 					onSuccess();
